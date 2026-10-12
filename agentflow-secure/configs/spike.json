@@ -1,0 +1,13 @@
+{
+  "model": "gpt-4o-mini-2024-07-18",
+  "model_checked": "available: models.retrieve 2026-10-10 (owned_by: system)",
+  "temperature": 0,
+  "seed": 20261010,
+  "max_completion_tokens": 1024,
+  "prices_usd_per_1m_tokens": {
+    "input": 0.15,
+    "cached_input": 0.075,
+    "output": 0.6
+  },
+  "prices_checked": "2026-10-11, developers.openai.com/api/docs/pricing"
+}

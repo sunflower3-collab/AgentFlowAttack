@@ -1,0 +1,38 @@
+{
+  "name": "complex_scenario",
+  "agents": {
+    "agent_1": {
+      "id": "agent_1",
+      "role": "Data Preparation",
+      "logic": "Clean the data and convert it into a structured format.",
+      "state": {}
+    },
+    "agent_2": {
+      "id": "agent_2",
+      "role": "Time Series Analysis",
+      "logic": "Calculate trend and seasonality.",
+      "state": {}
+    },
+    "agent_3": {
+      "id": "agent_3",
+      "role": "Text Analysis",
+      "logic": "Determine the emotional tone of the news article.",
+      "state": {}
+    },
+    "agent_4": {
+      "id": "agent_4",
+      "role": "Report Generation",
+      "logic": "Combine all results into a final conclusion.",
+      "state": {}
+    }
+  },
+  "logic": [
+    {"type": "Sequential", "agents": ["agent_1"]},
+    {"type": "Parallel", "agents": ["agent_2", "agent_3"]},
+    {"type": "Sequential", "agents": ["agent_4"]}
+  ],
+  "data": {
+    "time_series": [100, 105, 110, 115, 120],
+    "news_text": "The company announced record profits."
+  }
+}

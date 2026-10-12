@@ -1,0 +1,14 @@
+# Віртуальні середовища та кеш Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Секрети (ніколи не комітити)
+.env
+*.key
+
+# ОС
+.DS_Store
+Thumbs.db
